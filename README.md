@@ -23,7 +23,7 @@ Documentation will be posted here
 Interested in funding and/or contributing to Soda? Check out my Ko-fi! Any and all donations are appreciated.
 You can also contribute to soda by creating a fork! 
 Donators and Contributors will recieve a special role in the official soda discord server as a thank you
-for contributing to free and open source software.
+for contributing to free and open source software!
 
 https://ko-fi.com/pseudify
 https://discord.gg/EGNyw9X6Xm
