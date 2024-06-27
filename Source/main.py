@@ -8,7 +8,6 @@ import sys
 from database import Database
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 load_dotenv()
 
 TOKEN = os.getenv('TOKEN')
@@ -18,10 +17,10 @@ with open('config.json') as config_file:
     config = json.load(config_file)
     PREFIX = config['prefix']
 
-client = commands.Bot(command_prefix=PREFIX, intents=INTENTS)
-
+client = commands.Bot(command_prefix=PREFIX, intents=INTENTS, help_command=None)
 db = Database()
 client.db = db
+client.config = config
 
 async def load_extensions():
     cogs_folder = './Source/Cogs'

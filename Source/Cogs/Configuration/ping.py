@@ -13,7 +13,7 @@ class PingCog(commands.Cog):
         if existing_command:
             self.tree.remove_command(existing_command.name, type=discord.app_commands.CommandType.chat_input)
 
-    @commands.command()
+    @commands.command(name="ping", help="Display my ping in ms.")
     async def ping(self, ctx):
         await self.send_ping_embed(ctx)
 
